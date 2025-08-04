@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ریحونستان - Persian Poetry Garden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Pixel Art Background Layers -->
+    <div class="pixel-art-bg">
+        <div class="pixel-layer pixel-garden-layer"></div>
+        <div class="pixel-layer pixel-mountain-layer"></div>
+        <div class="pixel-layer pixel-ocean-layer"></div>
+        <div class="pixel-layer pixel-spring-layer"></div>
+        <div class="pixel-clouds"></div>
+        <div class="pixel-stars"></div>
+        <div class="pixel-particles"></div>
+    </div>
+
+    <!-- Floating Glass Panels -->
+    <div class="floating-panels">
+        <div class="glass-panel panel-1"></div>
+        <div class="glass-panel panel-2"></div>
+        <div class="glass-panel panel-3"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Dedication Section - Most Important -->
+        <section class="dedication-section">
+            <div class="glass-card dedication-card interactive-glass">
+                <div class="dedication-content">
+                    <h1 class="dedication-title">ریحانه ریحانکم</h1>
+                    <div class="dedication-message">
+                        <p>از تو ممنونم بابت چیزی که هستی</p>
+                        <p>ولی تو منو ببخش بابت چیزی که هستم</p>
+                    </div>
+                    <div class="pixel-flowers animated-pixel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="glass-card hero-card interactive-glass">
+                <h2 class="hero-title">ریحونستان</h2>
+                <p class="hero-subtitle">باغی از زیباترین اشعار عاشقانه ایران، هدیه‌ای ویژه برای ریحانه عزیز</p>
+                <div class="animated-garden"></div>
+                <div class="hero-particles"></div>
+            </div>
+        </section>
+
+        <!-- Poets Navigation -->
+        <section class="poets-section">
+            <div class="poets-grid">
+                <div class="poet-card glass-card interactive-glass" data-poet="hafez">
+                    <div class="poet-avatar">حافظ</div>
+                    <h3>حافظ شیرازی</h3>
+                    <p>لسان الغیب، استاد غزل فارسی</p>
+                    <div class="pixel-rose animated-pixel"></div>
+                </div>
+                
+                <div class="poet-card glass-card interactive-glass" data-poet="rumi">
+                    <div class="poet-avatar">رومی</div>
+                    <h3>مولانا جلال‌الدین رومی</h3>
+                    <p>عارف بزرگ و شاعر عشق الهی</p>
+                    <div class="pixel-whirl animated-pixel"></div>
+                </div>
+                
+                <div class="poet-card glass-card interactive-glass" data-poet="saadi">
+                    <div class="poet-avatar">سعدی</div>
+                    <h3>سعدی شیرازی</h3>
+                    <p>شیخ اجل سعدی، صاحب گلستان و بوستان</p>
+                    <div class="pixel-garden animated-pixel"></div>
+                </div>
+                
+                <div class="poet-card glass-card interactive-glass" data-poet="sepehri">
+                    <div class="poet-avatar">سپهری</div>
+                    <h3>سهراب سپهری</h3>
+                    <p>شاعر طبیعت و نقاش آسمان</p>
+                    <div class="pixel-sky animated-pixel"></div>
+                </div>
+
+                <div class="poet-card glass-card interactive-glass" data-poet="khayyam">
+                    <div class="poet-avatar">خیام</div>
+                    <h3>عمر خیام</h3>
+                    <p>ریاضی‌دان و شاعر، صاحب رباعیات</p>
+                    <div class="pixel-star animated-pixel"></div>
+                </div>
+
+                <div class="poet-card glass-card interactive-glass" data-poet="ferdowsi">
+                    <div class="poet-avatar">فردوسی</div>
+                    <h3>فردوسی</h3>
+                    <p>حماسه‌سرای بزرگ ایران، صاحب شاهنامه</p>
+                    <div class="pixel-crown animated-pixel"></div>
+                </div>
+
+                <div class="poet-card glass-card interactive-glass" data-poet="nizami">
+                    <div class="poet-avatar">نظامی</div>
+                    <h3>نظامی گنجوی</h3>
+                    <p>شاعر بزرگ عاشقانه، صاحب خمسه</p>
+                    <div class="pixel-heart animated-pixel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Poetry Display -->
+        <section class="poetry-section hidden" id="poetry-display">
+            <div class="glass-card poetry-card interactive-glass">
+                <div class="back-button">← بازگشت به ریحونستان</div>
+                <div class="poet-info">
+                    <h2 id="poet-name"></h2>
+                    <p id="poet-bio"></p>
+                </div>
+                <div class="poems-container" id="poems-container">
+                    <!-- Poems will be loaded here -->
+                </div>
+                <div class="poetry-particles"></div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Interactive Elements -->
+    <div class="interactive-elements">
+        <div class="floating-pixel-element pixel-butterfly"></div>
+        <div class="floating-pixel-element pixel-leaf"></div>
+        <div class="floating-pixel-element pixel-dewdrop"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
